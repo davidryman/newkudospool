@@ -1,0 +1,15 @@
+{
+  "id": "9acaf1b3-e915-4806-883f-1a1882c14abb",
+  "label": "newkudospool NoFlo runtime",
+  "secret": "digufiruro",
+  "permissions": {
+    "digufiruro": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
