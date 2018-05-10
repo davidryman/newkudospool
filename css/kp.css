@@ -1,0 +1,274 @@
+/* CSS Document */
+body
+{
+background-color: #fee;
+}
+div
+{
+border-width: 1px;
+border-style: solid;
+border-color: #700;
+background-color: #eef;
+}
+.gamerow
+{
+font-size: 10px;
+}
+.gamesnum
+{
+background-color: #fff;
+}
+.linesrow, .lines
+{
+font-size: 11px;
+}
+.scoresrow, .scores
+{
+font-size: 11px;
+}
+#ndate
+{
+position: absolute;
+right: 20px;
+font-size: 14px;
+font-weight: bold;
+font-style: italic;
+color: #00f;
+}
+#mitem, #signedin
+{
+color: #700;
+font-size: 14px;
+cursor: pointer;
+}
+#overlay
+{
+display: none;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 98%;
+height: 98%;
+z-index: 2;
+background-color: transparent;
+background-image: url('../images/blackhaze.gif');
+}
+#signin, #register
+{
+background-color: #eef;
+position: relative;
+top: 20%;
+left: 25%;
+}
+div#overview
+{
+background-color: #eef;
+width: 80%;
+height: 80%;
+position: absolute;
+top: 10%;
+left: 10%;
+overflow: scroll;
+}
+p#wait
+{
+position: absolute;
+top: 10%;
+left: 20%;
+background-color: #f00;
+}
+p#heading, p#subheading
+{
+font-size: 14px;
+font-weight: bold;
+}
+p#heading
+{
+text-align: center;
+}
+p#subheading
+{
+font-style: italic;
+text-indent: 30px;
+}
+p#text
+{
+margin: 10px;
+}
+span#canbutt
+{
+position: fixed;
+}
+.save
+{
+}
+#mitem:hover, #signedin:hover
+{
+font-size: 20px;
+}
+div#kpholder
+{
+position: normal;
+top: 10px;
+left: 0px;
+}
+div#kpselection
+{
+position: normal;
+top: 0px;
+left: 0px;
+}
+div#csel
+{
+text-align: center;
+}
+div#kpyears
+{
+display: inline;
+position: normal;
+border-width: 0px;
+}
+div#kpweeks
+{
+display: inline;
+position: normal;
+border-width: 0px;
+}
+div#kpdata
+{
+position: normal;
+top: 140px;
+}
+div#kppicks, div#kplines, div#kpresults
+{
+position: normal;
+display: block;
+width: 33%;
+float: left;
+}
+div#menudiv
+{
+border-width: 0px;
+}
+div#menushadow
+{
+position: absolute;
+top: 10px;
+left: 20px;
+background-color: #222;
+border-width: 0px;
+z-index: 1;
+}
+div#menu
+{
+position: absolute;
+top: 0px;
+left: 10px;
+z-index: 2;
+}
+div#menu, div#menushadow
+{
+width: 110px;
+height: 80%;
+}
+div#ajax
+{
+position: absolute;
+bottom: 0px;
+}
+div#titlediv
+{
+border-width: 0px
+}
+div#titleshadow
+{
+position: absolute;
+top: 10px;
+left: 160px;
+background-color: #000;
+border-width: 0px;
+z-index: 1;
+}
+div#title
+{
+position: absolute;
+top: 0px;
+left: 150px;
+z-index: 2;
+background-image: url(../images/kudospool.gif);
+background-repeat: no-repeat;
+}
+div#title2
+{
+position: absolute;
+top: 0px;
+left: 200px;
+font-size: 12px;
+color: #668;
+border-width: 0px;
+}
+div#titleshadow, div#title
+{
+width: 80%;
+height: 50px;
+}
+div#itemdiv
+{
+border-width: 0px;
+}
+div#itemshadow
+{
+position: absolute;
+top: 90px;
+left: 160px;
+background-color: #000;
+border-width: 0px;
+z-index: 1;
+}
+div#item
+{
+position: absolute;
+top: 80px;
+left: 150px;
+z-index: 2;
+font-size: 10px;
+overflow: scroll;
+}
+div#itemshadow, div#item
+{
+width: 80%;
+height: 70%;
+z-index: 2;
+}
+div#footdiv
+{
+border-width: 0px;
+}
+div#footshadow
+{
+position: absolute;
+bottom: 5px;
+left: 20px;
+background-color: #000;
+border-width: 0px;
+z-index: 1;
+}
+div#foot
+{
+position: absolute;
+bottom: 15px;
+left: 10px;
+z-index: 2;
+overflow: auto;
+}
+div#footshadow, div#foot
+{
+width: 95%;
+height: 60px;
+}
+div#console
+{
+position: absolute;
+right: 10px;
+bottom: 70px;
+}
