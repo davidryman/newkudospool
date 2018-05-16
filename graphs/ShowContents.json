@@ -1,0 +1,74 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "ShowContents",
+        "environment": {
+            "type": "noflo-nodejs"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "Read": {
+            "component": "filesystem/ReadFile",
+            "metadata": {
+                "x": 36,
+                "y": 108,
+                "width": 72,
+                "height": 72,
+                "label": "Read"
+            }
+        },
+        "Display": {
+            "component": "core/Output",
+            "metadata": {
+                "x": 252,
+                "y": 72,
+                "width": 72,
+                "height": 72,
+                "label": "Display"
+            }
+        },
+        "core/Output_x3xyx": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "Output",
+                "x": 252,
+                "y": 216,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "Read",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Display",
+                "port": "in"
+            }
+        },
+        {
+            "src": {
+                "process": "Read",
+                "port": "error"
+            },
+            "tgt": {
+                "process": "core/Output_x3xyx",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "flowhub.json",
+            "tgt": {
+                "process": "Read",
+                "port": "in"
+            }
+        }
+    ]
+}

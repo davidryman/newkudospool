@@ -1,0 +1,52 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "newgraph",
+        "description": "hello",
+        "icon": "hand-stop-o",
+        "environment": {
+            "type": "noflo-nodejs"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "core/Output_eicq4": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "Output",
+                "x": 360,
+                "y": 144,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Kick_2t9py": {
+            "component": "core/Kick",
+            "metadata": {
+                "label": "Kick",
+                "x": 180,
+                "y": 144,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "data": "flowhub.json",
+            "tgt": {
+                "process": "core/Kick_2t9py",
+                "port": "data"
+            }
+        },
+        {
+            "data": "'Hello'",
+            "tgt": {
+                "process": "core/Output_eicq4",
+                "port": "in"
+            }
+        }
+    ]
+}
